@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="tile" *ngFor="let item of FilteredData">
+        <div>
+            <img [src]="item.links.mission_patch_small" class="tile-img"
+            title="{{item.mission_name}}" alt="{{item.mission_name}}">
+        </div>
+        <div class="tile-content">
+            <h5 class="tile-name">{{item.mission_name}}  #{{item.flight_number}}</h5>
+            <h5 class="mission-generic-h5">Mission Id's :</h5>
+            <ul class="mission-ul" >
+                <li class="mission-li" *ngFor="let id of item.mission_id">{{id}}</li>
+            </ul>
+            <div class="tile-inner-row">
+                <div class="inline-h5">
+                    <h5 class="mission-generic-h5">Launch year :</h5>
+                </div>
+                <div class="inline-value">{{item.launch_year}}</div>
+            </div>
+            <div class="tile-inner-row">
+                <div class="inline-h5">
+                    <h5 class="mission-generic-h5">Successful Launch :</h5>
+                </div>
+                <div class="inline-value">{{item.launch_success}}</div>
+            </div>
+            <div class="tile-inner-row">
+                <div class="inline-h5">
+                    <h5 class="mission-generic-h5">Successful Landing :</h5>
+                </div>
+                <div class="inline-value">{{item.rocket.first_stage.cores[0].land_success}}</div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="error-msg" *ngIf="FilteredData">
+        <h3>No records found! Please try again by changing filter parameters.</h3>
+    </div> -->
+</div>

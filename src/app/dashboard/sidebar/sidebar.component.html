@@ -1,0 +1,82 @@
+<div class="sidebar-wrapper">
+    <div class="sidebar">
+        <div class="sidebar-title">
+            <h4 class="filter-text">Filters :</h4>
+        </div>
+        <div class="sidebar-container">
+            <div class="filter-container">
+                <h5 class="no-margin">Launch Year</h5>
+                <hr class="line">
+                <div class="btn-area">
+                    <div class="btn-row">
+                        <button
+                        class="{{yearSel == 2006 ? 'filter-btn active':'filter-btn'}}"
+                         (click)="activateYearBtn(2006)">2006</button>
+                        <button class="{{yearSel == 2007 ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateYearBtn(2007)">2007</button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="{{yearSel == 2008 ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateYearBtn(2008)">2008</button>
+                        <button class="{{yearSel == 2009 ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateYearBtn(2009)">2009</button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="{{yearSel == 2010 ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateYearBtn(2010)">2010</button>
+                        <button class="{{yearSel == 2011 ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateYearBtn(2011)">2011</button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="{{yearSel == 2012 ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateYearBtn(2012)">2012</button>
+                        <button class="{{yearSel == 2013 ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateYearBtn(2013)">2013</button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="{{yearSel == 2014 ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateYearBtn(2014)">2014</button>
+                        <button class="filter-btn" 
+                        (click)="activateYearBtn(2015)">2015</button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="{{yearSel == 2016 ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateYearBtn(2016)">2016</button>
+                        <button class="{{yearSel == 2017 ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateYearBtn(2017)">2017</button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="{{yearSel == 2018 ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateYearBtn(2018)">2018</button>
+                        <button class="{{yearSel == 2019 ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateYearBtn(2019)">2019</button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="{{yearSel == 2020 ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateYearBtn(2020)">2020</button>
+                    </div>
+                </div>
+                <h5 class="no-margin">Successful launch</h5>
+                <hr class="line">
+                <div class="btn-area">
+                    <div class="btn-row">
+                        <button class="{{launchSel == true ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateLaunchStatus(true)">True</button>
+                        <button class="{{launchSel == false ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateLaunchStatus(false)">False</button>
+                    </div>
+                </div>
+                <h5 class="no-margin">Successful landing</h5>
+                <hr class="line">
+                <div class="btn-area">
+                    <div class="btn-row">
+                        <button class="{{landSel == true ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateLandStatus(true)">True</button>
+                        <button class="{{landSel == false ? 'filter-btn active':'filter-btn'}}"
+                        (click)="activateLandStatus(false)">False</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

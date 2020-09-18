@@ -1,0 +1,101 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color:#F2F2F2;
+}
+.container{
+    width:80%;
+    display:inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.tile{
+    width: 20%;
+    min-height: 370px;
+    max-height: 370px;
+    vertical-align: -webkit-baseline-middle;
+    padding: 10px;
+    margin: 10px 1.5%;
+    background: #fff;
+    box-shadow: 4px 4px 8px #ccc;
+    border-radius: 12px;
+    display:inline-block;
+}
+.tile-content{
+    padding-top:10px;
+}
+.tile-img{
+    width:100%;
+    height:200px;
+    background:#eee;
+}
+.tile-name{
+    margin:5px 0;
+    color:navy;
+}
+.mission-generic-h5{
+    margin:5px 0;
+}
+.mission-ul{
+    margin: 0;
+    font-size: 12px;
+    padding:0 20px;
+}
+.mission-li{
+    padding:0;
+}
+.inline-h5, .inline-value{
+    display:inline-block;
+    box-sizing: border-box;
+}
+.inline-value{
+    font-size:13px;
+    padding-left:5px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width:700px){
+    .container{
+        width:65%;
+    }
+  .tile{
+      width:208px;;
+  }  
+}
+@media only screen  and (max-width:700px){
+    .container{
+        width:100%;
+        text-align: center;
+    }
+    .inline-value{
+        font-size:16px;
+    }
+    .no-margin{
+        font-size:16px;
+    }
+  .tile{
+    width: 83%;
+    box-sizing: border-box;
+    height: auto;
+    margin: 10px auto;
+    font-size: 20px;
+    text-align: center;
+    max-height: 450px;
+    
+  }  
+  .tile-content{
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 20px;
+    display: inline-block;
+    margin: auto;
+  }
+  .tile-img{
+    height: auto;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
